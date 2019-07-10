@@ -32,10 +32,10 @@ class App extends Component {
         <div className="App">
           <div className="Names">
             <ul>
-              {items.map( el => {
+              {items.map(el => {
                 return (
                   <li key={el.id}>
-                  Name: {el.name} | UserName: {el.username} | {' '} <a href={`https://${el.website}`}> Website </a>
+                    Name: {el.name} | UserName: {el.username} | {' '} <a href={`https://${el.website}`}> Website </a>
                   </li>
                 )
               })}
@@ -43,7 +43,6 @@ class App extends Component {
           </div>
         </div>
       )
-
     }
   }
 }
